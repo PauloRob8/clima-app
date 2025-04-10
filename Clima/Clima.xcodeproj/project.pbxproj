@@ -30,7 +30,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		3A7534032D96EAF200825725 /* Exceptions for "Clima" folder in "Clima" target */ = {
+		3A0A76682D9D848300CC0660 /* Exceptions for "Clima" folder in "Clima" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -40,10 +40,10 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		3A7533DD2D96EAEF00825725 /* Clima */ = {
+		3A0A76612D9D848300CC0660 /* Clima */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				3A7534032D96EAF200825725 /* Exceptions for "Clima" folder in "Clima" target */,
+				3A0A76682D9D848300CC0660 /* Exceptions for "Clima" folder in "Clima" target */,
 			);
 			path = Clima;
 			sourceTree = "<group>";
@@ -88,7 +88,7 @@
 		3A7533D22D96EAEF00825725 = {
 			isa = PBXGroup;
 			children = (
-				3A7533DD2D96EAEF00825725 /* Clima */,
+				3A0A76612D9D848300CC0660 /* Clima */,
 				3A7533F42D96EAF200825725 /* ClimaTests */,
 				3A7533FE2D96EAF200825725 /* ClimaUITests */,
 				3A7533DC2D96EAEF00825725 /* Products */,
@@ -121,7 +121,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				3A7533DD2D96EAEF00825725 /* Clima */,
+				3A0A76612D9D848300CC0660 /* Clima */,
 			);
 			name = Clima;
 			packageProductDependencies = (
@@ -297,6 +297,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,6 +326,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
