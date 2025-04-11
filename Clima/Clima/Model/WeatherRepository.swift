@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 protocol WeatherDelegate {
 
@@ -18,6 +19,8 @@ protocol WeatherDelegate {
 struct WeatherRepository {
 
     var delegate: WeatherDelegate?
+    
+    let apiURL = "https://api.openweathermap.org/data/2.5/weather?units=metric"
 
     func getApiKey() -> String? {
         if let path = Bundle.main.path(forResource: "Secrets", ofType: "plist")
@@ -40,7 +43,7 @@ struct WeatherRepository {
         if let apiKey = getApiKey() {
             if let url = URL(
                 string:
-                    "https://api.openweathermap.org/data/2.5/weather?q=\(city)&units=metric&appid=\(apiKey)"
+                    "\(apiURL)&q=\(city)&appid=\(apiKey)"
             ) {
 
                 let urlSession = URLSession(configuration: .default)
@@ -55,6 +58,27 @@ struct WeatherRepository {
 
         }
 
+    }
+    
+    func fetchWeather(latitude lat: CLLocationDegrees, longitute long: CLLocationDegrees){
+        if let apiKey = getApiKey() {
+            if let url = URL(
+                string:
+                    "\(apiURL)&appid=\(apiKey)&lat=\(lat)&lon=\(long)"
+            ) {
+
+                let urlSession = URLSession(configuration: .default)
+
+                let task = urlSession.dataTask(
+                    with: url,
+                    completionHandler: requestHandler(data:response:error:))
+
+                task.resume()
+
+            }
+
+        }
+        
     }
 
     func requestHandler(
