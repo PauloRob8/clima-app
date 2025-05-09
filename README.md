@@ -15,9 +15,9 @@ Clima App is a personal project developed to deepen my understanding of native i
 - **Clean UI**: Simple and user-friendly interface designed with UIKit.
 - **API Integration**: Utilizes [OpenWeatherMap API](https://openweathermap.org/) for accurate weather data.
 
-## 📱 Screenshots
+## 📱 Demo
 
-*Include screenshots of your app here to visually demonstrate its functionality.*
+![Clima App Demo](Clima/clima_recording.gif)
 
 ## 🧰 Technologies Used
 
@@ -39,7 +39,10 @@ Clima App is a personal project developed to deepen my understanding of native i
     cd clima-app/Clima
     open Clima.xcodeproj
 
-3. Obtain a key from OpenWeatherMap API and isert it on *SecretsExample.plist* file. And then rename the file to just *Secrets.plist*.  
+3. Obtain a key from OpenWeatherMap API and insert it on 
+```SecretsExample.plist```
+and then rename the file to just
+```Secrets.plist```. 
 This was made to avoid exposure from the ApiKey.
 4. Build and run the project on the simulator or device.
 
